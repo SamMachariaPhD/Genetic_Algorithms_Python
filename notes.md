@@ -17,11 +17,12 @@
   - Suitable for problems with large number of parameters and complex math
   representations.
   - Darwinian evolution
-    - *Variation/Mutation:* Individual traits may vary (randomly).
+    - *Variation:* Individual traits may vary.
     - *Inheritance:* Some traits are passed on to the offspring.
     - *Resemblance:* Offspring resemble their parents more than unrelated other.
     - *Selection:* Survival of the fittest to reproduce.
     - *Crossover/Recombination:* Offspring have a mix of their parents traits.
+    - *Mutation:* Random change(s) to one or more genes.
 
 - The genetic algorithm analogy
   - Whereas Darwinian evolution maintains a population of individual specimens,
@@ -40,8 +41,28 @@
   - Fitness function
   Aka target function. The function/problem we seek to optimize/solve.
   Individuals are evaluated every time based on the fitness function.
+  The evolution process stops once the solution has been found within a given
+  fitness value.
+
+  - Selection
+  Individuals with high fitness value are more likely to be chosen for the next cycle.
+  Low fitness may still be selected but with a lower probability.
+
+  - Crossover
+  To create a pair of new individuals, two parents are chosen from the current generation. Parts of their chromosome interchanged (crossed over) to create new offspring.
+
+    ![Crossing over](Screenshot_from_2021-05-26_00-04-28.png)
+
+  - Mutation
+  Periodically and randomly refresh the population. Introduce new patterns into the chromosomes, and encourage search in uncharted areas of the solution space.
 
   2. The theory behind genetic algorithms.
+  - Behind the concept of genetic algorithms is the *building block hypothesis*. Small building blocks assembled together to obtain an optimal solution to the problem. This is guided by a superior fitness score.
+
+  - The **schema theorem** is the Holland's fundamental theorem of genetic algorithms. Schemata are patterns/templates that can be found within chromosomes.
+  e.g. if a set of chromosomes is represented by binary strings, the schema `1*01` represents all those chromosomes that have a `1` in the leftmost position, and `01` in the rightmost position.
+
+
   3. Differences between genetic algorithms and traditional algorithms.
   4. Advantages and limitations of genetic algorithms.
   5. When to used genetic algorithms.
