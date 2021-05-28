@@ -62,6 +62,11 @@
   - The **schema theorem** is the Holland's fundamental theorem of genetic algorithms. Schemata are patterns/templates that can be found within chromosomes.
   e.g. if a set of chromosomes is represented by binary strings, the schema `1*01` represents all those chromosomes that have a `1` in the leftmost position, and `01` in the rightmost position.
 
+  - The *order* of the schema is the number of digits that are fixed (not *)
+  - The *defining length* of the schema is the distance between the furthermost fixed digits.
+
+  - *The schema theorem states that* the frequency of schemata of low order, short defining length, and above-average fitness increases exponentially in successive generations.
+
 
   3. Differences between genetic algorithms and traditional algorithms.
   4. Advantages and limitations of genetic algorithms.
