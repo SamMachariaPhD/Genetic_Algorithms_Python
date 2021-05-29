@@ -69,5 +69,17 @@
 
 
   3. Differences between genetic algorithms and traditional algorithms.
+  - There are various differences between genetic algorithms and say, gradient-based algorithms:
+    - Maintaining a population of solutions
+    - Using a genetic representation of the solutions
+    - Utilizing fitness function
+    - Exhibiting probabilistic behavior
+  - In genetic representations, the solution search is decoupled from the original problem domain.
+  - Genetic algorithms are not aware of what the chromosome represent.
+  - Genetic algorithms do not rely on derivatives or any other information, except the value of the fitness function. This makes them suitable to *handle functions that are hard or impossible to mathematically differentiate*.
+  - Despite the probabilistic nature of the process of genetic algorithms, the overall search for a solution is not random; the direction is towards a better chance to to improve the next generation results.
+  > Genetic algorithm steer towards the highest fitness function value, while gradient descent steer towards the direction of lower cost function.
+  
+
   4. Advantages and limitations of genetic algorithms.
   5. When to used genetic algorithms.
