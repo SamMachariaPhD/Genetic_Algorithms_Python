@@ -79,7 +79,20 @@
   - Genetic algorithms do not rely on derivatives or any other information, except the value of the fitness function. This makes them suitable to *handle functions that are hard or impossible to mathematically differentiate*.
   - Despite the probabilistic nature of the process of genetic algorithms, the overall search for a solution is not random; the direction is towards a better chance to to improve the next generation results.
   > Genetic algorithm steer towards the highest fitness function value, while gradient descent steer towards the direction of lower cost function.
-  
+
 
   4. Advantages and limitations of genetic algorithms.
+   * Global optimization capabilities.
+   * Handling problems with complex mathematical representation.
+   * Handling problems that lack mathematical representations.
+   * Resilience to noise.
+   * Support for parallelism and distributed processing.
+   * Suitability for continuous learning.
+
+   ##### Global optimization
+   * Sometimes you have the best solution to your problem but not the best in overall. This is the case with local maxima and minima points. Traditional gradient-based algorithms get stuck in these local points rather than finding the global optimum points. Genetic algorithms are less prone to this problem.
+   ##### Handling a lack of math representation
+   * A case in point is when the fitness score is based on human opinion.
+   * Machine learning car driver can have various solutions. A genetic algorithm can be used to tune by having various solutions compete with each other and eventually come up with a better solution.
+
   5. When to used genetic algorithms.
