@@ -91,8 +91,12 @@
 
    ##### Global optimization
    * Sometimes you have the best solution to your problem but not the best in overall. This is the case with local maxima and minima points. Traditional gradient-based algorithms get stuck in these local points rather than finding the global optimum points. Genetic algorithms are less prone to this problem.
+
    ##### Handling a lack of math representation
    * A case in point is when the fitness score is based on human opinion.
    * Machine learning car driver can have various solutions. A genetic algorithm can be used to tune by having various solutions compete with each other and eventually come up with a better solution.
+
+   ##### Withstand noise
+   Some systems such as sensors, may give you a different output when provided with the same input. This behavior can easily throw off many traditional algorithms but GA may stand resilient to this noise.
 
   5. When to used genetic algorithms.
