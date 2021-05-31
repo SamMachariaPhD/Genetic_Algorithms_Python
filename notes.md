@@ -99,4 +99,17 @@
    ##### Withstand noise
    Some systems such as sensors, may give you a different output when provided with the same input. This behavior can easily throw off many traditional algorithms but GA may stand resilient to this noise.
 
+   ##### Parallelism
+   Operations of GA can performed concurrently. This makes GA a great candidate for distributed and cloud-based implementation.
+
+   ##### Continuous learning
+   In nature, evolution never stops. GAs can operate in an ever changing environment. At any instant, the best solution can be fetched and used. The changes in the environment has to be slow in relation to generation turnaround.
+
+   ##### Limitations of GAs
+    - Need for special definitions
+    - Need for hyperparameter tuning
+    - Computationally intensive
+    - Risk of premature convergence
+    - No guaranteed solution
+
   5. When to used genetic algorithms.
